@@ -128,7 +128,7 @@ selected_lang = st.sidebar.selectbox(
 TRANSLATIONS = {
     "Türkçe": {
         "page_title": "MEVLÂNÂ CELÂLEDDÎN-İ RÛMÎ (K.S.)",
-        "sub_title": "Hayatı, Dönemi, Eserleri ve Mesnevî-i Şerif'تan Hikmetli İktibaslar Veritabanı",
+        "sub_title": "Hayatı, Dönemi, Eserleri ve Mesnevî-i Şerif'ten Hikmetli İktibaslar Veritabanı",
         "tab1": "📖 Mesnevî İktibasları ve Şerhleri",
         "tab2": "👤 Hayatı ve Biyografisi",
         "tab3": "🌍 Yaşadığı Dönem ve Tarihçe",
@@ -142,6 +142,14 @@ TRANSLATIONS = {
         "no_record": "Arama kriterlerinize uygun beyit veya iktibas bulunamadı.",
         "analysis_label": "🔍 Tasavvufi Açıklama ve Şerh:",
         "translation_label": "Tercüme/Kaynak:",
+        "sidebar_info": (
+            "💡 *Not:* Bu web uygulaması ücretsiz sunucularda barındırılmaktadır."
+            " Uzun süre işlem yapılmadığında uygulama uyku moduna geçebilir"
+            " (ekranda 'Zzzz' simgesi çıkabilir).\n\n💤 Eğer böyle bir ekranla"
+            " karşılaşırsanız, ekranda beliren mavi renkli *'Yes, get this app"
+            " back up!'* butonuna tıklayın ve uygulamanın yeniden uyanması"
+            " için 15-30 saniye bekleyin."
+        ),
         # Sekme 2 Biyografi
         "bio_title": "👤 Hz. Mevlânâ'nın Mübarek Hayat Çizgisi",
         "id_card": "📋 Kimlik Kartı",
@@ -167,7 +175,7 @@ TRANSLATIONS = {
         1244 yılında Konya'da *Şems-i Tebrizî* ile buluşması hayatının dönüm noktası olmuştur. Bu karşılaşma, zahirî bir müderrisi, aşk ve cezbe denizi bir mutasavvıfa dönüştürmüştür. Şems ile yaptığı derin sohbetler sonrasında medrese derslerini bırakmış, tamamen sema, zikir ve ilahi aşk vadisine yönelmiştir.
 
         *4. Şeb-i Arûs (Rabb'e Vuslat):*
-        Mevlânâ 17 Aralık 1273 tarihinde Konya'da vefat etmiştir. O, ölümü bir ayrılık değil, sevgilinin Sevgiliye (Hakk'ª) kavuşması olarak gördüğünden vefat gecesine *"Şeb-i Arûs" (Düğün Gecesi)* denilmiştir.
+        Mevlânâ 17 Aralık 1273 tarihinde Konya'da vefat etmiştir. O, ölümü bir ayrılık değil, sevgilinin Sevgiliye (Hakk'a) kavuşması olarak gördüğünden vefat gecesine *"Şeb-i Arûs" (Düğün Gecesi)* denilmiştir.
         """,
         # Sekme 3 Tarihçe
         "history_title": "🌍 13. Yüzyıl Anadolu Selçuklu Dönemi ve Tarihsel Bağlam",
@@ -341,6 +349,14 @@ TRANSLATIONS = {
         "no_record": "No couplets or excerpts found matching your search criteria.",
         "analysis_label": "🔍 Mystical Explanation & Commentary:",
         "translation_label": "Translation/Source:",
+        "sidebar_info": (
+            "💡 *Note:* This web application is hosted on free servers. If left"
+            " inactive for a long time, the application may go into sleep mode"
+            " (a 'Zzzz' icon may appear on the screen).\n\n💤 If you encounter such"
+            " a screen, click the blue *'Yes, get this app back up!'* button that"
+            " appears on the screen and wait 15-30 seconds for the application"
+            " to wake back up."
+        ),
         # Tab 2 Bio
         "bio_title": "👤 The Blessed Life Path of Mawlana Rumi",
         "id_card": "📋 Identity Card",
@@ -672,14 +688,7 @@ with tab5:
 # UYKU MODU BİLGİLENDİRME BİLEŞENİ (SIDEBAR) & ALT BİLGİ (FOOTER)
 # -----------------------------------------------------------------------------
 st.sidebar.markdown("---")
-st.sidebar.info(
-    "💡 *Not:* Bu web uygulaması ücretsiz sunucularda barındırılmaktadır. "
-    "Uzun süre işlem yapılmadığında uygulama uyku moduna geçebilir "
-    "(ekranda 'Zzzz' simgesi çıkabilir).\n\n"
-    "💤 Eğer böyle bir ekranla karşılaşırsanız, ekranda beliren mavi renkli "
-    "*'Yes, get this app back up!'* butonuna tıklayın ve uygulamanın "
-    "yeniden uyanması için 15-30 saniye bekleyin."
-)
+st.sidebar.info(t["sidebar_info"])
 
 st.markdown("---")
 st.markdown(
